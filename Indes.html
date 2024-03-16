@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/049ad62d78.js" crossorigin="anonymous"></script>
+    <title></title>
+    <style>
+        body{
+            background-color: #eff1f3;
+        }
+        a{
+          text-decoration: none;
+          color:#1b1f3b;
+        }
+        .container{
+            border: solid;
+        }
+        .btn_search{
+            background-color: #FFC300; color: #1b1f3b;
+        }
+        .btn_search:hover{
+            background-color: #CE9E00;
+            color: #1b1f3b;
+        }
+        .banner{
+            background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url("asset/journal-2850091.jpg");
+            height: 91vh;
+            background-size: cover;
+            background-position: center;
+        }
+        .gap-cb{
+            padding-top: 25vh;
+        }
+        .banner-content{
+            height: 100%;
+            color: #eff1f3;
+            display: flex;
+            justify-content: center;
+        }
+        .item-carousel{
+          height: 50vh;
+        }
+        
+        
+    </style>
+    
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm navbar-dark  sticky-top" style="background-color: #1b1f3b; color: #eff1f3;">
+        <div class="container-fluid">
+          <span class="navbar-brand fw-bolder fs-3 p-0" >
+            <img src="asset/11zon_cropped.png" width="38"> Yo!
+          </span>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item mx-3">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Event</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Kelas
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="kelas/text.html">Text</a></li>
+                  <li><a class="dropdown-item" href="kelas/imageprocessing.html">Image Processing</a></li>
+                  <li><a class="dropdown-item" href="kelas/audiodigital.html">Digital Audio</a></li>
+                  <li><a class="dropdown-item" href="kelas/video.html">Video</a></li>
+                  <li><a class="dropdown-item" href="kelas/animasi.html">Animasi</a></li>
+                  <li><a class="dropdown-item" href="kelas/iklan.html">Iklan Promosi</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" aria-current="page">About</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn_search shadow-lg border-0 rounded rounded-2" type="submit" >Search</button>
+            </form>
+          </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container-fluid banner">
+            <div class="gap-cb">
+                <div class=" banner-content col-md-5 ms-md-auto" >
+                    <div class="text-md-end text-center">
+                        <p class="fs-1-md fs-2 fw-bolder">Selamat Datang di Yo!</p>
+                        <p class="fs-4-md fs-5">Platform belajar multimedia No 1 di Indonesia, tempat sempurna untuk mengasah kreativitas Anda dalam teks, video, audio, iklan, dan animasi. </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="my-5 container border-0 col-lg-7  col-10 col-lg-6">
+            <h2 class="text-center fw-bold">Kenapa Harus Belajar di Yo!</h2>
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Akses Gratis
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>Yo! memberikan akses gratis ke materi pembelajaran,</strong> memungkinkan siapa saja untuk mengembangkan keterampilan multimedia tanpa hambatan biaya.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Metode Pembelajaran Interaktif
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>Dengan metode pembelajaran yang interaktif,</strong> pengguna dapat lebih mudah memahami dan menerapkan konsep multimedia dalam proyek nyata.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      Kurikulum Terintegrasi
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>Yo! menawarkan kurikulum terpadu</strong> yang mencakup semua aspek multimedia, memastikan pembelajaran yang komprehensif dari teks hingga animasi.
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+        <div class="container border-0 my-4">
+          <h2 class="fw-bold">Mau Belajar apa hari ini?
+          </h2>
+        </div>
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+          
+          <div class="carousel-inner">
+            <div class="carousel-item active data-bs-interval="5000"" >
+              <div class="container border-0">
+                <div class="row">
+                  <div class="col border-0">
+                    <a class="col" href="kelas/text.html">
+                      <div class="container p-0 border-0">
+                        <img class=" img-fluid" src="asset/carousel_item/text.jpg">
+                      </div>
+                      <h3 class="text-center">Text</h3>
+                      <p class="text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam, neque?</p>
+                    </a>
+                  </div>
+                  <div class="col border-0 ">
+                    <a class="col" href="kelas/imageprocessing.html">
+                      <div class="container p-0 border-0">
+                        <img class=" img-fluid" src="asset/carousel_item/image.jpg">
+                      </div>
+                      <h3 class="text-center">Image Processing</h3>
+                      <p class="text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam, neque?</p>
+                    </a>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="container border-0">
+                <div class="row">
+                  <div class="col border-0 ">
+                    <a class="col" href="kelas/audiodigital.html">
+                      <div class="container p-0 border-0">
+                        <img class=" img-fluid" src="asset/carousel_item/audio.jpg">
+                      </div>
+                      <h3 class="text-center">Digital Audio</h3>
+                      <p class="text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam, neque?</p>
+                    </a>
+                  </div>
+                  <div class="col border-0 ">
+                    <a class="col" href="kelas/video.html"> 
+                      <div class="container p-0 border-0">
+                        <img class=" img-fluid" src="asset/carousel_item/video.jpg">
+                      </div>
+                      <h3 class="text-center">Video</h3>
+                      <p class="text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam, neque?</p>
+                    </a>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="container border-0">
+                <div class="row">
+                  <div class="col border-0 ">
+                    <a class="col" href="kelas/animasi.html">
+                      <div class="container  p-0 border-0">
+                        <img class=" img-fluid" src="asset/carousel_item/animasi.jpg">
+                      </div>
+                      <h3 class="text-center">Animasi</h3>
+                      <p class="text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam, neque?</p>
+                    </a>
+                  </div>
+                  <div class="col border-0 ">
+                    <a class="col" href="kelas/iklan.html">
+                      <div class="container  p-0 border-0">
+                        <img class=" img-fluid" src="asset/carousel_item/iklan.jpg">
+                      </div>
+                      <h3 class="text-center">Iklan Promosi</h3>
+                      <p class="text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam, neque?</p>
+                    </a>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev " type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden" >Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+    </main>
+    <!-- Remove the container if you want to extend the Footer to full width. -->
+<div class="container-fluid mt-5 p-0 border-0 footer">
+    <!-- Footer -->
+    <footer class="text-center text-white" style="background-color: #1b1f3b">
+      <!-- Grid container -->
+      <div class="container border-0 ">
+        <!-- Section: Links -->
+        
+  
+        <hr class="my-5" />
+  
+        <!-- Section: Text -->
+        <section class="mb-5">
+          <div class="row d-flex justify-content-center">
+            <div class="col-lg-8">
+              <p>
+                “Semakin banyak yang kamu baca, semakin banyak hal yang akan kamu ketahui. Semakin banyak yang kamu pelajari, semakin banyak tempat yang akan kamu kunjungi.” - Dr. Seuss
+              </p>
+            </div>
+          </div>
+        </section>
+        <!-- Section: Text -->
+  
+        <!-- Section: Social -->
+        <section class="text-center mb-5">
+          <a href="" class="text-white me-4">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="" class="text-white me-4">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="" class="text-white me-4">
+            <i class="fab fa-google"></i>
+          </a>
+          <a href="" class="text-white me-4">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="" class="text-white me-4">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="" class="text-white me-4">
+            <i class="fab fa-github"></i>
+          </a>
+        </section>
+        <!-- Section: Social -->
+      </div>
+      <!-- Grid container -->
+  
+      <!-- Copyright -->
+      <div
+           class="text-center p-3"
+           style="background-color: #FFC300; color:#1b1f3b"
+           >
+        © 2024 Copyright: Terradjannah
+        
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+  </div>
+  <!-- End of .container -->
+
+  
+    <script src="bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+</body>
+</html>
