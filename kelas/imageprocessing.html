@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../asset/11zon_cropped.png">
     <link rel="stylesheet" href="../bootstrap-5.0.2-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/049ad62d78.js" crossorigin="anonymous"></script>
@@ -190,6 +191,8 @@
             Kualitas visual dan ukuran file gambar digital sangat dipengaruhi oleh jumlah bit yang digunakan. Gambar dengan bit yang lebih tinggi akan memiliki kualitas yang lebih baik dan gradasi warna yang lebih halus, tetapi juga akan menghasilkan ukuran file yang lebih besar. Pemilihan kedalaman bit yang tepat tergantung pada kebutuhan penggunaan gambar tersebut—apakah untuk kejelasan maksimal, efisiensi penyimpanan, atau keseimbangan antara keduanya.  
           </p>
           <hr>
+          <h4 class="fw-bold">Proses Rendering Pixel: Dari Bitmap ke Tampilan Monitor</h4>
+
     
           <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal2"><div class="banner-content3 gallery-item"></div></a>
             <p style="text-align: center; font-size: 10px;">Please click the picture for full experience</p>
@@ -215,6 +218,12 @@
             Color LUT, atau Tabel Pencarian Warna, adalah sebuah tabel yang berisi nilai-nilai warna yang digunakan untuk memetakan atau mengubah warna input menjadi warna output yang diinginkan. Dalam konteks pengeditan gambar atau video, LUT memungkinkan perubahan warna yang cepat dan konsisten dengan menerapkan nilai-nilai dari tabel ini ke data visual. Ini sangat berguna dalam color grading, di mana LUT dapat menentukan tampilan visual tertentu untuk menciptakan suasana atau gaya yang diinginkan.  
             <br/><br/>LUT berfungsi sebagai jembatan antara warna asli yang ditangkap oleh kamera dan hasil akhir yang diinginkan pada footage. Dengan menggunakan LUT, editor dapat mengubah warna dengan efisien tanpa harus menyesuaikan setiap parameter warna secara manual. LUT juga memudahkan untuk menjaga konsistensi warna antar klip, yang sangat penting dalam produksi video untuk mencapai tampilan yang seragam
             <br/><br/>Ada beberapa jenis LUT yang digunakan dalam industri, seperti 1D LUT dan 3D LUT. 1D LUT biasanya mengatur tingkat kecerahan atau gamma, sedangkan 3D LUT lebih kompleks dan dapat mengubah warna serta luminositas. LUT diekspor dalam berbagai format file seperti .LUT, .CUBE, atau .3DL, yang kompatibel dengan berbagai perangkat lunak pengeditan. Penggunaan LUT yang tepat dapat meningkatkan kualitas visual dan memberikan hasil yang profesional pada produksi gambar atau video.
+          </p>
+          <h4 class="fw-bold">Proses Rendering Pixel: Dari Bitmap ke Tampilan Monitor</h4>
+          <p class="paragrah">
+            Proses konversi pixel yang dikodekan secara biner dalam bitmap menjadi tampilan berwarna di monitor dimulai dengan penggunaan frame buffer. Frame buffer adalah area memori yang digunakan untuk menyimpan informasi visual sementara sebelum ditampilkan pada layar. Setiap pixel dalam bitmap memiliki nilai biner yang merepresentasikan warna. Nilai ini kemudian diinterpretasikan oleh frame buffer untuk menentukan warna yang sesuai.
+            <br/><br/>Selanjutnya, Color Look-Up Table (CLUT) digunakan untuk memetakan nilai biner ke nilai RGB yang spesifik. CLUT adalah tabel yang berisi korespondensi antara nilai biner dan kombinasi warna RGB. Ketika frame buffer menerima nilai biner dari bitmap, ia merujuk ke CLUT untuk mendapatkan nilai RGB yang sesuai. Nilai RGB ini merupakan representasi dari intensitas merah (R), hijau (G), dan biru (B) yang ketika digabungkan akan menghasilkan warna pada pixel tersebut.
+            <br/><br/>Akhirnya, setelah nilai RGB diperoleh, pixel tersebut siap untuk ditampilkan pada monitor. Monitor menggunakan data RGB ini untuk mengaktifkan sub-pixel merah, hijau, dan biru pada koordinat tertentu, sehingga menciptakan warna yang dilihat oleh mata. Proses ini terjadi sangat cepat dan berulang untuk setiap pixel pada layar, memungkinkan kita untuk melihat gambar yang utuh dan berwarna pada monitor. Dengan cara ini, komputer dapat menampilkan berbagai warna dan nuansa dengan presisi yang tinggi, yang penting untuk grafis komputer yang detail dan realistis.
           </p>
           <hr>
           <div class="banner-content4"></div>
