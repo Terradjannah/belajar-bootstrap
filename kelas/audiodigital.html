@@ -38,6 +38,13 @@
       
           background-size: cover;
         }
+        .banner-content2{
+          background: url("../asset/content_image/sound-wave-1657431.jpg");
+          background-position: center;
+          height: 80vh;
+      
+          background-size: cover;
+        }
         
         
     </style>
@@ -190,8 +197,186 @@
               </div>
             </div>
           </section>
+          <hr>
           <section>
+
+            <div class="banner-content2"></div>
+            <br/> 
+            <h1 class="fw-bold">Sinyal Audio = Sinyal Sinusoidal</h1>  
+            <p class="paragrah">
+              Semua sinyal audio, tidak peduli seberapa kompleks, terdiri dari komponen-komponen sinusoidal. Ini merupakan fondasi dari teori sinyal dan sistem, yang menyatakan bahwa sinyal sinusoidal adalah blok bangunan dasar dari semua jenis sinyal lainnya. Dengan memahami bagaimana berbagai frekuensi sinusoidal dapat dikombinasikan, kita dapat menghasilkan bentuk gelombang yang kompleks dan bervariasi, yang sangat penting dalam pemrosesan sinyal audio.
+            </p>
             
+
+            <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal2"><div class="container-fluid d-flex justify-content-center align-items-center">
+              <img class="img-fluid" src="../asset/content_image/Screenshot 2024-03-30 131515.png">
+            </div></a>
+            <p style="text-align: center; font-size: 10px;">Please click the picture for full experience</p>
+            <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-fullscreen">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel1">Sinyal Kompleks | for mobile device, please change orientation for full experience</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <div>
+                      <img src="../asset/content_image/Screenshot 2024-03-30 131515.png" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <p class="paragrah">
+              <br/>Gambar diatas menunjukkan proses pembentukan sinyal kompleks melalui superposisi sinusoidal. Contoh yang diberikan mencakup frekuensi 0.5 kHz, 1 kHz, dan 1.5 kHz, yang masing-masing menunjukkan frekuensi fundamental dan harmoniknya. Superposisi ini menghasilkan bentuk gelombang yang lebih rumit, menunjukkan bagaimana variasi dalam frekuensi dan amplitudo dapat mempengaruhi bentuk akhir gelombang. Ini menekankan pentingnya analisis Fourier dalam pemrosesan sinyal audio, yang memungkinkan kita untuk memecah dan memahami sinyal kompleks dalam bentuk yang lebih sederhana.
+            </p>  
+
+            <h3 class="fw-bolc">Proses Konversi Sinyal Audio Analog ke Sinyal Digital</h3>
+            <p class="paragrah">
+              Proses konversi sinyal analog menjadi digital melibatkan dua tahapan krusial: sampling dan kuantisasi. Sampling adalah tahap di mana nilai-nilai kontinu dari sinyal analog direkam pada interval waktu tertentu, menghasilkan serangkaian titik-titik diskrit yang merepresentasikan sinyal tersebut dalam domain waktu. Tahap ini sangat penting karena menentukan seberapa akurat sinyal analog dapat direpresentasikan dalam bentuk digital.
+              <br/><br/>Setelah sampling, langkah selanjutnya adalah kuantisasi, di mana amplitudo sinyal yang telah disampling dibulatkan ke nilai terdekat dalam set diskrit. Proses ini menghasilkan representasi digital dari sinyal analog yang memungkinkan transmisi dan penyimpanan data audio dan video dengan lebih efisien. Kuantisasi ini juga menentukan tingkat resolusi sinyal digital, yang berpengaruh pada kualitas akhir dari sinyal yang direproduksi.
+              <br/><br/>Dengan menggabungkan kedua proses ini, kita dapat mengubah sinyal analog yang kompleks menjadi format digital yang lebih sederhana dan mudah untuk diolah. Ini memungkinkan kita untuk memanfaatkan teknologi digital dalam berbagai aplikasi, termasuk penyimpanan data, komunikasi, dan pemrosesan sinyal. Pemahaman yang mendalam tentang proses ini adalah kunci untuk mengoptimalkan kualitas dan efisiensi dalam pemrosesan sinyal digital.
+            </p>
+
+            <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal3"><div class="container-fluid d-flex justify-content-center align-items-center">
+              <img class="img-fluid" src="../asset/content_image/Screenshot 2024-03-30 133115.png">
+            </div></a>
+            <p style="text-align: center; font-size: 10px;">Please click the picture for full experience</p>
+            <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-fullscreen">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel1">Proses Konversi sinyal analog ke digital | for mobile device, please change orientation for full experience</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <div>
+                      <img src="../asset/content_image/Screenshot 2024-03-30 133115.png" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <h3 class="fw-bolc">Teorema Nyquist</h3>
+            <p class="paragrah">
+              Teorema Nyquist adalah konsep penting dalam pemrosesan sinyal yang menjelaskan hubungan antara frekuensi sampling dan kemampuan untuk merekonstruksi sinyal tanpa ambiguitas. Teorema ini menetapkan bahwa frekuensi sampling harus minimal dua kali lebih besar dari frekuensi tertinggi dalam sinyal untuk menghindari fenomena aliasing, di mana sinyal berfrekuensi tinggi dapat disalahartikan sebagai sinyal berfrekuensi rendah.
+              <br/><br/>Aliasing terjadi ketika sinyal yang memiliki frekuensi lebih tinggi dari setengah frekuensi sampling direkam, menyebabkan sinyal tersebut muncul seolah-olah memiliki frekuensi yang lebih rendah. Persamaan (f_{alias} = f_{sampling} - f_{true}) memberikan cara kuantitatif untuk menganalisis dan memprediksi aliasing di bawah kondisi tertentu. Dengan memahami dan menerapkan Teorema Nyquist, kita dapat memastikan bahwa sinyal digital yang kita rekam dan proses adalah representasi yang akurat dari sinyal analog aslinya.
+            </p>
+            <br/>
+            <h3 class="fw-bolc">Signal to Noise Ratio</h3>
+            <p class="paragrah">
+              Dalam sistem analog, fluktuasi acak dapat menghasilkan noise yang ditambahkan ke sinyal, menyebabkan tegangan yang diukur menjadi tidak akurat. Untuk mengatasi masalah ini, konsep Signal-to-Noise Ratio (SNR) diperkenalkan. SNR adalah ukuran yang mengkuantifikasi tingkat sinyal yang diinginkan terhadap tingkat noise latar belakang. Ini didefinisikan sebagai rasio daya sinyal yang benar terhadap noise dan berfungsi sebagai metrik penting dalam menentukan kualitas sinyal.
+              <br/><br/>SNR biasanya diukur dalam decibel (dB), di mana 1 dB mewakili sepuluh persen dari sebuah bel. Nilai SNR dalam unit dB dapat dihitung menggunakan logaritma basis-10 dari tegangan kuadrat. Dua rumus disediakan untuk menghitung SNR; satu melibatkan pembagian akar kuadrat dari daya dalam sinyal oleh daya dalam noise dan kemudian mengambil logaritma basis-10-nya dikalikan dengan 10, sementara rumus lainnya menyederhanakan proses ini dengan langsung membagi daya dalam sinyal oleh daya dalam noise sebelum menerapkan logaritma basis-10 dan mengalikannya dengan 20.
+              <br/><br/>Perhitungan ini sangat penting bagi insinyur dan profesional yang bekerja dengan sistem analog untuk memastikan bahwa sinyal ditransmisikan dengan gangguan minimal dari noise latar belakang. Dengan mengoptimalkan SNR, mereka dapat meningkatkan kinerja sistem, memastikan bahwa data ditransmisikan dengan akurat dan efisien di berbagai aplikasi termasuk telekomunikasi, rekayasa audio, dan lainnya.
+            </p>
+
+            <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal4"><div class="container-fluid d-flex justify-content-center align-items-center">
+              <img class="img-fluid" src="../asset/content_image/Schematically-shown-signal-to-noise-ratio-SNR-calculation-based-on-measurement-data.png">
+            </div></a>
+            <p style="text-align: center; font-size: 10px;">Please click the picture for full experience</p>
+            <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-fullscreen">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel1">Signal to Noise Ratio | for mobile device, please change orientation for full experience</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <div>
+                      <img src="../asset/content_image/Schematically-shown-signal-to-noise-ratio-SNR-calculation-based-on-measurement-data.png" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <br/>
+            <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal5"><div class="container-fluid d-flex justify-content-center align-items-center">
+              <img class="img-fluid" src="../asset/content_image/Screenshot 2024-03-30 134607.png">
+            </div></a>
+            <p style="text-align: center; font-size: 10px;">Please click the picture for full experience</p>
+            <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-fullscreen">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel1">Signal to Noise Ratio | for mobile device, please change orientation for full experience</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <div>
+                      <img src="../asset/content_image/Screenshot 2024-03-30 134607.png" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <h3 class="fw-bolc">Audio Filtering</h3>
+            <p class="paragrah">
+              Dalam proses penyaringan audio, sebelum sinyal audio menjalani sampling dan konversi AD, biasanya disaring untuk menghilangkan frekuensi yang tidak diinginkan. Ini memastikan bahwa hanya frekuensi yang diperlukan yang dipertahankan, yang seleksinya tergantung pada aplikasi. Misalnya, dalam aplikasi pidato, frekuensi yang biasanya dipertahankan berkisar dari 50 Hz hingga 10 kHz. Penyaringan ini difasilitasi oleh filter bandpass atau filter pembatas band yang secara efektif menyaring frekuensi yang lebih rendah dan lebih tinggi.
+              <br/><br/>Untuk aplikasi musik, sinyal musik audio umumnya mencakup rentang dari sekitar 20 Hz hingga 20 kHz. Menarik untuk dicatat bahwa 20 Hz sesuai dengan dengungan rendah yang dihasilkan oleh gajah yang kesal, sementara 20 kHz mewakili kira-kira desisan tertinggi yang dapat didengar oleh telinga manusia. Oleh karena itu, dalam aplikasi musik juga, filter bandpass memainkan peran penting dalam menyaring frekuensi yang berada di luar rentang khusus ini. Dengan demikian, pemahaman yang mendalam tentang proses penyaringan ini adalah kunci untuk mengoptimalkan kualitas dan kejernihan dalam pemrosesan sinyal audio.
+            </p>
+            <h3 class="fw-bolc">Audio Quality vs Data Rate</h3>
+            <p class="paragrah">
+              Tingkat data tak terkompresi meningkat seiring dengan penggunaan lebih banyak bit untuk kuantisasi, proses yang sangat penting dalam mengubah sinyal analog kontinu menjadi bentuk digital. Peningkatan ini sangat terlihat pada informasi stereo, yang memerlukan bitrate ganda (dalam bit per detik) dibandingkan dengan mono untuk mentransmisikan sinyal audio digital. Kompleksitas hubungan ini diilustrasikan dalam berbagai aplikasi audio, masing-masing menunjukkan keseimbangan yang berbeda antara kualitas audio dan tingkat data.
+              <br/><br/>Pada Tabel dibawah, jelas bahwa berbagai aplikasi audio memiliki bitrate dan bandwidth sinyal yang bervariasi, dipengaruhi oleh faktor-faktor seperti tingkat sampling dan apakah suaranya mono atau stereo. Misalnya, audio telepon, yang ditandai dengan suara mono dan tingkat sampling yang lebih rendah yaitu 8 kHz, memiliki bitrate 8 Kb/s. Sebaliknya, audio DVD membanggakan hingga 6 saluran dengan bitrate yang jauh lebih tinggi yaitu 1,200.0 Kb/s karena suara stereo yang kompleks dan bandwidth sinyal yang lebih luas. Dengan demikian, pemahaman yang mendalam tentang hubungan ini adalah kunci untuk mengoptimalkan kualitas dan efisiensi dalam pemrosesan sinyal audio.
+            </p>
+            <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal6"><div class="container-fluid d-flex justify-content-center align-items-center">
+              <img class="img-fluid" src="../asset/content_image/Screenshot 2024-03-30 134927.png">
+            </div></a>
+            <p style="text-align: center; font-size: 10px;">Please click the picture for full experience</p>
+            <div class="modal fade" id="exampleModal6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-fullscreen">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel1">Bitrate Audio | for mobile device, please change orientation for full experience</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <div>
+                      <img src="../asset/content_image/Screenshot 2024-03-30 134927.png" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <hr>
+          <section>
+            <h4 class="text-center">Filtering Noise Audio</h4>
+            <div class="container-fluid border border-1">
+              <div class="row border-1">
+                <div class="col-sm-8 col-md-6 border border-1 d-flex justify-content-center align-items-center">
+                  <h5 class="text-center">Sinyal Acak.wav</h5>
+                  <audio controls preload="true">
+                    <source src="../Tugas/sinyalacak2.wav" type="audio/wav">
+                    Browser Anda tidak mendukung tag audio.
+                </audio>
+                </div>
+                <div class="col-sm-8 col-md-6 border border-1 d-flex justify-content-center align-items-center">
+                  <h5 class="text-center">Sinyal Informasi.wav</h5>
+                  <audio controls preload="true">
+                    <source src="../Tugas/sinyalinformasi.wav" type="audio/wav">
+                    Browser Anda tidak mendukung tag audio.
+                  </audio>
+                </div>
+                <div class="col-sm-8 col-md-6 border border-1 d-flex justify-content-center align-items-center">
+                  <h5 class="text-center">Suara Campur.wav</h5>
+                  <audio controls preload="true">
+                    <source src="../Tugas/suaracampur.wav" type="audio/wav">
+                    Browser Anda tidak mendukung tag audio.
+                  </audio>
+                </div>
+                <div class="col-sm-8 col-md-6 border border-1 d-flex justify-content-center align-items-center">
+                  <h5 class="text-center">Suara Asli.wav</h5>
+                  <audio controls preload="true">
+                    <source src="../Tugas/suaraasli.wav" type="audio/wav">
+                    Browser Anda tidak mendukung tag audio.
+                  </audio>
+                </div>
+              </div>
+            </div>
           </section>
         </div>
       </div>
