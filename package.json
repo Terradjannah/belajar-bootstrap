@@ -1,0 +1,14 @@
+{
+  "name": "website_yo",
+  "version": "1.0.0",
+  "description": "Tugas website Multimedia",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Adi Febriana",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
